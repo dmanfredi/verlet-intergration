@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  margin: 0;
+  background-color: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.canvas-container {
+  width: 500px;
+  height: 500px;
+  outline: 2px solid white;
+
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.stats {
+  position: absolute;
+  padding-left: 2rem;
+  top: 0;
+  left: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  color: white;
+}
+
+.object-count {
+}
