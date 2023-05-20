@@ -104,7 +104,7 @@ function spawnBall(e) {
   const x = (e.clientX - rect.left) * scale; // Calculate the x coordinate of the click relative to the canvas, taking into account devicePixelRatio
   const y = (e.clientY - rect.top) * scale; // Calculate the y coordinate of the click relative to the canvas, taking into account devicePixelRatio
 
-  let ball = new Ball(rand(4, 4), 10000, x, y);
+  let ball = new Ball(rand(5, 10), 10000, x, y);
   balls.push(ball);
   drawBall(ball);
 
@@ -216,7 +216,7 @@ function handleConstraint() {
   }
 }
 
-for (let i = 0; i < 700; i++) {
+for (let i = 0; i < 350; i++) {
   let e = { clientX: rand(100, 300), clientY: rand(100, 300) };
   spawnBall(e);
 }
